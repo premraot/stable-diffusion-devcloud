@@ -1,0 +1,21 @@
+# docker-compose.yml
+version: "3.8"
+services:
+  stable_diffusion:
+    image: 'premraotd/stable-diffusion-app:1.0'
+    container_name: stable_diffusion
+    ports:
+      - "5000:5000"
+      - "8000:8000"
+    #volumes:
+    # - ./app/resources:/app/resources
+    # - ./app/logs:/app/logs
+    # - ./app/output:/app/output
+
+  prometheus:
+    image: 'premraotd/stable-diffusion-prometheus:1.0'
+    ports:
+      - "9090:9090"
+    #volumes:
+    # - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
