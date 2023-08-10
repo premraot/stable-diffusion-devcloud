@@ -2,7 +2,7 @@
 version: "3.8"
 services:
   stable_diffusion:
-    image: 'premraotd/stable-diffusion-app:gpu'
+    image: 'premraotd/stable-diffusion-app:1.0'
     #container_name: stable_diffusion
     ports:
       - "5000:5000"
