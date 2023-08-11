@@ -12,10 +12,10 @@ services:
     # - ./app/logs:/app/logs
     # - ./app/output:/app/output
 
-  #prometheus:
-    #image: 'premraotd/stable-diffusion-prometheus:1.0'
-    #ports:
-      #- "9090:9090"
+  prometheus:
+    image: 'premraotd/stable-diffusion-prometheus:1.0'
+    ports:
+      - "9090:9090"
     #volumes:
     # - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
